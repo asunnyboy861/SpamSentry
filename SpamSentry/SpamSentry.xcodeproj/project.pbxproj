@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03AC058219675FA52E35F0BB /* BlocklistSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E39719B08F690F21AA8B9D /* BlocklistSyncService.swift */; };
+		076698C7DDF8F25D4B8AABAC /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588B48033C455A33528095F3 /* NotificationService.swift */; };
+		08AFC8B13589FB4AF7478975 /* BlocklistSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E39719B08F690F21AA8B9D /* BlocklistSyncService.swift */; };
+		0E32EEE5294C7585737FA81B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211E6136A0D7549F68CBFDC8 /* Assets.xcassets */; };
+		1024610727DA206509D94B4D /* BlocklistDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CF97AF4FC1B751207EC4E /* BlocklistDatabase.swift */; };
+		10FF473955FF3E3470F05475 /* SpamSentryShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82023EEA292D29A188212E59 /* SpamSentryShared.swift */; };
+		1AC4C1EE8E8DCE7C2C2D057B /* BlocklistModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975A26BD51384287326FCEAA /* BlocklistModels.swift */; };
+		1BC4F11C7C1E0A225B69D1BF /* BlocklistSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E39719B08F690F21AA8B9D /* BlocklistSyncService.swift */; };
+		1CBA588F147ED8FCDE6DAD41 /* BlocklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A10FA756BF9612B71B7A8B /* BlocklistView.swift */; };
+		1E39F37C35E459A25F740C25 /* SpamSentryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E6D0D8C171372FACF8FC69 /* SpamSentryApp.swift */; };
+		284538C3E04D04DE9339D27C /* MessageFilterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E624C8A557E280C6EC7CDDD /* MessageFilterHandler.swift */; };
+		31903F5ED4B7562701C01604 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7007C5718854CE458115AB6C /* CallDirectoryHandler.swift */; };
+		341635CC9CE6C9C139263831 /* SpamSentryMessageFilter.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1FC010592E2B29EB620FB889 /* SpamSentryMessageFilter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3BE90822B54A7BD966BFD06E /* BlockRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637E2B3DEDB5C80175CDF52D /* BlockRule.swift */; };
+		4B0F2F1099AB5EA85919329C /* SpamSentryShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82023EEA292D29A188212E59 /* SpamSentryShared.swift */; };
+		514E0422E645B9EC52408CF8 /* SpamSentryCallBlocker.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0155E4ECF1BB1E0DA3357F52 /* SpamSentryCallBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		56EB50C7AB9C94AB395C8034 /* SyncViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3B8C1D3B5DAFDF6D48F7A6 /* SyncViewModel.swift */; };
+		5AAD32A7286BC584336C5657 /* BlocklistModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975A26BD51384287326FCEAA /* BlocklistModels.swift */; };
+		64B4FD592F4F6B62A941965A /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B33A603F00814C34991580 /* StatsViewModel.swift */; };
+		73398202BD575F837A2E3C08 /* BlockerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C0BBD339150278C3D78E /* BlockerViewModel.swift */; };
+		7CE148599461362C47CD9F20 /* BlockedNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A4DF433112407588035DF /* BlockedNumber.swift */; };
+		85A03595819F99AD734F5197 /* ContactProtectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890FF3B11079E2CDC25C8531 /* ContactProtectionService.swift */; };
+		8E94055D922FA54FF0974AD9 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9B6DF7DE7E62322B9046E8 /* DashboardView.swift */; };
+		9D183DE5B5AA2333BE165C6A /* BlocklistDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CF97AF4FC1B751207EC4E /* BlocklistDatabase.swift */; };
+		A43DFAD69B75C011201034F9 /* BlocklistModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975A26BD51384287326FCEAA /* BlocklistModels.swift */; };
+		A6D663AA33ACB71565379768 /* ContactSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D6AB078A533FF6C7590935 /* ContactSupportView.swift */; };
+		A8FEA34DEF4473D3261E5B07 /* BlocklistDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CF97AF4FC1B751207EC4E /* BlocklistDatabase.swift */; };
+		CE6070A5B897D3701ECDC0E7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F217AA1112F7CFABE7987B76 /* MainTabView.swift */; };
+		DE84EE796D45C9D05471C61E /* NumberSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173EFC56ADBB255FC2E0DC2D /* NumberSearchView.swift */; };
+		ECA0A8A00832B7F804C01889 /* SpamSentryShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82023EEA292D29A188212E59 /* SpamSentryShared.swift */; };
+		F5C022894BFEA99C97012DB2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019D4AF1669B990D97403103 /* SettingsView.swift */; };
+		FD2904E0B2140908E4FEA1D3 /* ExtensionHealthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532B3890EB97E8A02F5ABF55 /* ExtensionHealthService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B525D91EEC6960A3F8E8D62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4C53672FFEE81A6D8AC8175 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBAEA50BD6D4A579C264BAB9;
+			remoteInfo = SpamSentryMessageFilter;
+		};
+		F142DAC8FFCDD8F972E9FD76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4C53672FFEE81A6D8AC8175 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80F7342CD2A4262BEBC37DF1;
+			remoteInfo = SpamSentryCallBlocker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73E5B98D1A3359AF77D0E5BE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				514E0422E645B9EC52408CF8 /* SpamSentryCallBlocker.appex in Embed Foundation Extensions */,
+				341635CC9CE6C9C139263831 /* SpamSentryMessageFilter.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0155E4ECF1BB1E0DA3357F52 /* SpamSentryCallBlocker.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = SpamSentryCallBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		019D4AF1669B990D97403103 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		05104F7BA8EC008E2F6ACEBA /* SpamSentry.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SpamSentry.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		173EFC56ADBB255FC2E0DC2D /* NumberSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberSearchView.swift; sourceTree = "<group>"; };
+		1FC010592E2B29EB620FB889 /* SpamSentryMessageFilter.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = SpamSentryMessageFilter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		211E6136A0D7549F68CBFDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25B33A603F00814C34991580 /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
+		29A10FA756BF9612B71B7A8B /* BlocklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklistView.swift; sourceTree = "<group>"; };
+		3F9B6DF7DE7E62322B9046E8 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		4E624C8A557E280C6EC7CDDD /* MessageFilterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFilterHandler.swift; sourceTree = "<group>"; };
+		52E39719B08F690F21AA8B9D /* BlocklistSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklistSyncService.swift; sourceTree = "<group>"; };
+		532B3890EB97E8A02F5ABF55 /* ExtensionHealthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHealthService.swift; sourceTree = "<group>"; };
+		55D6AB078A533FF6C7590935 /* ContactSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSupportView.swift; sourceTree = "<group>"; };
+		588B48033C455A33528095F3 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		5FD8F651E3FC74E1C72DDC0B /* SpamSentryMessageFilter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpamSentryMessageFilter.entitlements; sourceTree = "<group>"; };
+		637E2B3DEDB5C80175CDF52D /* BlockRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRule.swift; sourceTree = "<group>"; };
+		7007C5718854CE458115AB6C /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		82023EEA292D29A188212E59 /* SpamSentryShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpamSentryShared.swift; sourceTree = "<group>"; };
+		890FF3B11079E2CDC25C8531 /* ContactProtectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactProtectionService.swift; sourceTree = "<group>"; };
+		8D1E83CF8C8EDA0AE2F0845C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		975A26BD51384287326FCEAA /* BlocklistModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklistModels.swift; sourceTree = "<group>"; };
+		B5F4C0BBD339150278C3D78E /* BlockerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockerViewModel.swift; sourceTree = "<group>"; };
+		C1E6D0D8C171372FACF8FC69 /* SpamSentryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpamSentryApp.swift; sourceTree = "<group>"; };
+		C22CF97AF4FC1B751207EC4E /* BlocklistDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocklistDatabase.swift; sourceTree = "<group>"; };
+		DC3B8C1D3B5DAFDF6D48F7A6 /* SyncViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncViewModel.swift; sourceTree = "<group>"; };
+		E32A4DF433112407588035DF /* BlockedNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockedNumber.swift; sourceTree = "<group>"; };
+		E863C306BFDFC346AC0B3BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EA3C4B9D762E6B0133068FD5 /* SpamSentryCallBlocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpamSentryCallBlocker.entitlements; sourceTree = "<group>"; };
+		F0383EDCD695433D23A71B3C /* SpamSentry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpamSentry.entitlements; sourceTree = "<group>"; };
+		F217AA1112F7CFABE7987B76 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0021EFBBC19331A8464EDEFD /* SpamSentryMessageFilter */ = {
+			isa = PBXGroup;
+			children = (
+				E863C306BFDFC346AC0B3BD0 /* Info.plist */,
+				4E624C8A557E280C6EC7CDDD /* MessageFilterHandler.swift */,
+				5FD8F651E3FC74E1C72DDC0B /* SpamSentryMessageFilter.entitlements */,
+			);
+			path = SpamSentryMessageFilter;
+			sourceTree = "<group>";
+		};
+		14DD956E2EE174F02F7A8A0A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				890FF3B11079E2CDC25C8531 /* ContactProtectionService.swift */,
+				532B3890EB97E8A02F5ABF55 /* ExtensionHealthService.swift */,
+				588B48033C455A33528095F3 /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		221D77001E8AA9C91C39D4F6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C22CF97AF4FC1B751207EC4E /* BlocklistDatabase.swift */,
+				975A26BD51384287326FCEAA /* BlocklistModels.swift */,
+				52E39719B08F690F21AA8B9D /* BlocklistSyncService.swift */,
+				82023EEA292D29A188212E59 /* SpamSentryShared.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2AA60C08E8AED6CA18FC2EB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05104F7BA8EC008E2F6ACEBA /* SpamSentry.app */,
+				0155E4ECF1BB1E0DA3357F52 /* SpamSentryCallBlocker.appex */,
+				1FC010592E2B29EB620FB889 /* SpamSentryMessageFilter.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B9DF6553CBB1C1FC0C2E0E1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B5F4C0BBD339150278C3D78E /* BlockerViewModel.swift */,
+				25B33A603F00814C34991580 /* StatsViewModel.swift */,
+				DC3B8C1D3B5DAFDF6D48F7A6 /* SyncViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		528D11EAB4D123DD0FB68382 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0AC5FD42449EAA9F24843FF /* Components */,
+				29A10FA756BF9612B71B7A8B /* BlocklistView.swift */,
+				55D6AB078A533FF6C7590935 /* ContactSupportView.swift */,
+				3F9B6DF7DE7E62322B9046E8 /* DashboardView.swift */,
+				F217AA1112F7CFABE7987B76 /* MainTabView.swift */,
+				173EFC56ADBB255FC2E0DC2D /* NumberSearchView.swift */,
+				019D4AF1669B990D97403103 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		735A5D024581E9908406FB13 /* SpamSentry */ = {
+			isa = PBXGroup;
+			children = (
+				BBF1A8E8F5813D6AF4C6F222 /* Models */,
+				14DD956E2EE174F02F7A8A0A /* Services */,
+				4B9DF6553CBB1C1FC0C2E0E1 /* ViewModels */,
+				528D11EAB4D123DD0FB68382 /* Views */,
+				211E6136A0D7549F68CBFDC8 /* Assets.xcassets */,
+				F0383EDCD695433D23A71B3C /* SpamSentry.entitlements */,
+				C1E6D0D8C171372FACF8FC69 /* SpamSentryApp.swift */,
+			);
+			path = SpamSentry;
+			sourceTree = "<group>";
+		};
+		8FD0F95A7ECCE472DDA50FC8 /* SpamSentryCallBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				7007C5718854CE458115AB6C /* CallDirectoryHandler.swift */,
+				8D1E83CF8C8EDA0AE2F0845C /* Info.plist */,
+				EA3C4B9D762E6B0133068FD5 /* SpamSentryCallBlocker.entitlements */,
+			);
+			path = SpamSentryCallBlocker;
+			sourceTree = "<group>";
+		};
+		BBF1A8E8F5813D6AF4C6F222 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E32A4DF433112407588035DF /* BlockedNumber.swift */,
+				637E2B3DEDB5C80175CDF52D /* BlockRule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F0AC5FD42449EAA9F24843FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F9A41A605290D879D5FD684F = {
+			isa = PBXGroup;
+			children = (
+				221D77001E8AA9C91C39D4F6 /* Shared */,
+				735A5D024581E9908406FB13 /* SpamSentry */,
+				8FD0F95A7ECCE472DDA50FC8 /* SpamSentryCallBlocker */,
+				0021EFBBC19331A8464EDEFD /* SpamSentryMessageFilter */,
+				2AA60C08E8AED6CA18FC2EB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80F7342CD2A4262BEBC37DF1 /* SpamSentryCallBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74B12723610278E3484B64D7 /* Build configuration list for PBXNativeTarget "SpamSentryCallBlocker" */;
+			buildPhases = (
+				91DC6E82BAC0E3C09D449011 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpamSentryCallBlocker;
+			packageProductDependencies = (
+			);
+			productName = SpamSentryCallBlocker;
+			productReference = 0155E4ECF1BB1E0DA3357F52 /* SpamSentryCallBlocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B69A0B00A82ACDD2558DEA01 /* SpamSentry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C4EBAE0968095BE68200752 /* Build configuration list for PBXNativeTarget "SpamSentry" */;
+			buildPhases = (
+				ED1087398DA6C752C61CFCDF /* Sources */,
+				F52D057482C69B3D71134901 /* Resources */,
+				73E5B98D1A3359AF77D0E5BE /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E85794B046EAFAEC960C9E73 /* PBXTargetDependency */,
+				4D789AC73C9CC18445EB4A84 /* PBXTargetDependency */,
+			);
+			name = SpamSentry;
+			packageProductDependencies = (
+			);
+			productName = SpamSentry;
+			productReference = 05104F7BA8EC008E2F6ACEBA /* SpamSentry.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBAEA50BD6D4A579C264BAB9 /* SpamSentryMessageFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5D0B4AC421518D49666152E /* Build configuration list for PBXNativeTarget "SpamSentryMessageFilter" */;
+			buildPhases = (
+				9D9F2B467BA9523DA98FF225 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpamSentryMessageFilter;
+			packageProductDependencies = (
+			);
+			productName = SpamSentryMessageFilter;
+			productReference = 1FC010592E2B29EB620FB889 /* SpamSentryMessageFilter.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4C53672FFEE81A6D8AC8175 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					80F7342CD2A4262BEBC37DF1 = {
+						DevelopmentTeam = JP4TN5PTS3;
+						ProvisioningStyle = Automatic;
+					};
+					B69A0B00A82ACDD2558DEA01 = {
+						DevelopmentTeam = JP4TN5PTS3;
+						ProvisioningStyle = Automatic;
+					};
+					DBAEA50BD6D4A579C264BAB9 = {
+						DevelopmentTeam = JP4TN5PTS3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F74C15CB367A2BA4F491C156 /* Build configuration list for PBXProject "SpamSentry" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F9A41A605290D879D5FD684F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B69A0B00A82ACDD2558DEA01 /* SpamSentry */,
+				80F7342CD2A4262BEBC37DF1 /* SpamSentryCallBlocker */,
+				DBAEA50BD6D4A579C264BAB9 /* SpamSentryMessageFilter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F52D057482C69B3D71134901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E32EEE5294C7585737FA81B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91DC6E82BAC0E3C09D449011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1024610727DA206509D94B4D /* BlocklistDatabase.swift in Sources */,
+				A43DFAD69B75C011201034F9 /* BlocklistModels.swift in Sources */,
+				03AC058219675FA52E35F0BB /* BlocklistSyncService.swift in Sources */,
+				31903F5ED4B7562701C01604 /* CallDirectoryHandler.swift in Sources */,
+				10FF473955FF3E3470F05475 /* SpamSentryShared.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D9F2B467BA9523DA98FF225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8FEA34DEF4473D3261E5B07 /* BlocklistDatabase.swift in Sources */,
+				5AAD32A7286BC584336C5657 /* BlocklistModels.swift in Sources */,
+				1BC4F11C7C1E0A225B69D1BF /* BlocklistSyncService.swift in Sources */,
+				284538C3E04D04DE9339D27C /* MessageFilterHandler.swift in Sources */,
+				ECA0A8A00832B7F804C01889 /* SpamSentryShared.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED1087398DA6C752C61CFCDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BE90822B54A7BD966BFD06E /* BlockRule.swift in Sources */,
+				7CE148599461362C47CD9F20 /* BlockedNumber.swift in Sources */,
+				73398202BD575F837A2E3C08 /* BlockerViewModel.swift in Sources */,
+				9D183DE5B5AA2333BE165C6A /* BlocklistDatabase.swift in Sources */,
+				1AC4C1EE8E8DCE7C2C2D057B /* BlocklistModels.swift in Sources */,
+				08AFC8B13589FB4AF7478975 /* BlocklistSyncService.swift in Sources */,
+				1CBA588F147ED8FCDE6DAD41 /* BlocklistView.swift in Sources */,
+				85A03595819F99AD734F5197 /* ContactProtectionService.swift in Sources */,
+				A6D663AA33ACB71565379768 /* ContactSupportView.swift in Sources */,
+				8E94055D922FA54FF0974AD9 /* DashboardView.swift in Sources */,
+				FD2904E0B2140908E4FEA1D3 /* ExtensionHealthService.swift in Sources */,
+				CE6070A5B897D3701ECDC0E7 /* MainTabView.swift in Sources */,
+				076698C7DDF8F25D4B8AABAC /* NotificationService.swift in Sources */,
+				DE84EE796D45C9D05471C61E /* NumberSearchView.swift in Sources */,
+				F5C022894BFEA99C97012DB2 /* SettingsView.swift in Sources */,
+				1E39F37C35E459A25F740C25 /* SpamSentryApp.swift in Sources */,
+				4B0F2F1099AB5EA85919329C /* SpamSentryShared.swift in Sources */,
+				64B4FD592F4F6B62A941965A /* StatsViewModel.swift in Sources */,
+				56EB50C7AB9C94AB395C8034 /* SyncViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D789AC73C9CC18445EB4A84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBAEA50BD6D4A579C264BAB9 /* SpamSentryMessageFilter */;
+			targetProxy = 5B525D91EEC6960A3F8E8D62 /* PBXContainerItemProxy */;
+		};
+		E85794B046EAFAEC960C9E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80F7342CD2A4262BEBC37DF1 /* SpamSentryCallBlocker */;
+			targetProxy = F142DAC8FFCDD8F972E9FD76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24C577E7FEE86FDA785CEB35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpamSentryCallBlocker/SpamSentryCallBlocker.entitlements;
+				INFOPLIST_FILE = SpamSentryCallBlocker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpamSentryCallBlocker;
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.callkit.call-directory";
+				INFOPLIST_KEY_NSExtension_NSExtensionPrincipalClass = "$(PRODUCT_MODULE_NAME).CallDirectoryHandler";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2026. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.SpamSentry.CallBlockerExtension;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F98B1E0A02B94D923452B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpamSentryMessageFilter/SpamSentryMessageFilter.entitlements;
+				INFOPLIST_FILE = SpamSentryMessageFilter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpamSentryMessageFilter;
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.identitylookup.message-filter";
+				INFOPLIST_KEY_NSExtension_NSExtensionPrincipalClass = "$(PRODUCT_MODULE_NAME).MessageFilterHandler";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2026. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.SpamSentry.MessageFilterExtension;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		349CAA55B46EE1A40FA8C4BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JP4TN5PTS3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4E44BC1C86135A1202E8AD10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = JP4TN5PTS3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5CD06AABFC1EEC8ABEAAFBB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpamSentry/SpamSentry.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_NSContactsUsageDescription = "SpamSentry needs access to your contacts to protect them from being blocked.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.SpamSentry;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78D859A959018AB312F35422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpamSentryCallBlocker/SpamSentryCallBlocker.entitlements;
+				INFOPLIST_FILE = SpamSentryCallBlocker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpamSentryCallBlocker;
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.callkit.call-directory";
+				INFOPLIST_KEY_NSExtension_NSExtensionPrincipalClass = "$(PRODUCT_MODULE_NAME).CallDirectoryHandler";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2026. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.SpamSentry.CallBlockerExtension;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8EAE8123D5B092EF11F5EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpamSentryMessageFilter/SpamSentryMessageFilter.entitlements;
+				INFOPLIST_FILE = SpamSentryMessageFilter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpamSentryMessageFilter;
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.identitylookup.message-filter";
+				INFOPLIST_KEY_NSExtension_NSExtensionPrincipalClass = "$(PRODUCT_MODULE_NAME).MessageFilterHandler";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2026. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.SpamSentry.MessageFilterExtension;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF135279C6DC48548717AAAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SpamSentry/SpamSentry.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_NSContactsUsageDescription = "SpamSentry needs access to your contacts to protect them from being blocked.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zzoutuo.SpamSentry;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C4EBAE0968095BE68200752 /* Build configuration list for PBXNativeTarget "SpamSentry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD06AABFC1EEC8ABEAAFBB7 /* Debug */,
+				FF135279C6DC48548717AAAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		74B12723610278E3484B64D7 /* Build configuration list for PBXNativeTarget "SpamSentryCallBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D859A959018AB312F35422 /* Debug */,
+				24C577E7FEE86FDA785CEB35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B5D0B4AC421518D49666152E /* Build configuration list for PBXNativeTarget "SpamSentryMessageFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F98B1E0A02B94D923452B4B /* Debug */,
+				C8EAE8123D5B092EF11F5EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F74C15CB367A2BA4F491C156 /* Build configuration list for PBXProject "SpamSentry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E44BC1C86135A1202E8AD10 /* Debug */,
+				349CAA55B46EE1A40FA8C4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4C53672FFEE81A6D8AC8175 /* Project object */;
+}

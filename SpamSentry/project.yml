@@ -1,0 +1,87 @@
+name: SpamSentry
+options:
+  bundleIdPrefix: com.zzoutuo
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+  generateEmptyDirectories: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    DEVELOPMENT_TEAM: JP4TN5PTS3
+    CODE_SIGN_STYLE: Automatic
+    GENERATE_INFOPLIST_FILE: YES
+
+targets:
+  SpamSentry:
+    type: application
+    platform: iOS
+    sources:
+      - path: SpamSentry
+        excludes:
+          - "**/*.xcassets/AppIcon.appiconset/*.png"
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zzoutuo.SpamSentry
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_NSContactsUsageDescription: "SpamSentry needs access to your contacts to protect them from being blocked."
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    dependencies:
+      - target: SpamSentryCallBlocker
+      - target: SpamSentryMessageFilter
+    entitlements:
+      path: SpamSentry/SpamSentry.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.zzoutuo.SpamSentry.shared
+
+  SpamSentryCallBlocker:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: SpamSentryCallBlocker
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zzoutuo.SpamSentry.CallBlockerExtension
+        INFOPLIST_KEY_CFBundleDisplayName: SpamSentryCallBlocker
+        INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright 2026. All rights reserved."
+        INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier: com.apple.callkit.call-directory
+        INFOPLIST_KEY_NSExtension_NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).CallDirectoryHandler"
+        APPLICATION_EXTENSION_API_ONLY: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    entitlements:
+      path: SpamSentryCallBlocker/SpamSentryCallBlocker.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.zzoutuo.SpamSentry.shared
+
+  SpamSentryMessageFilter:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: SpamSentryMessageFilter
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zzoutuo.SpamSentry.MessageFilterExtension
+        INFOPLIST_KEY_CFBundleDisplayName: SpamSentryMessageFilter
+        INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright 2026. All rights reserved."
+        INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier: com.apple.identitylookup.message-filter
+        INFOPLIST_KEY_NSExtension_NSExtensionPrincipalClass: "$(PRODUCT_MODULE_NAME).MessageFilterHandler"
+        APPLICATION_EXTENSION_API_ONLY: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    entitlements:
+      path: SpamSentryMessageFilter/SpamSentryMessageFilter.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.zzoutuo.SpamSentry.shared
